@@ -4,9 +4,11 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
+/*@import url('./reset.css');*/
 @import url('./header.css');
+@import url('./price.css');
+@import url('./reset.css');
+@import url('./subscription.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
