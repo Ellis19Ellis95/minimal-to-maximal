@@ -1,58 +1,52 @@
-<section id="subscription" class="subscription section">
-    <div class="subscription-input-section container">
-        <div class="subscription-main-container">
-            <h2 class="subscription-title section-title">Newsletter</h2>
+<section class="subscription">
+    <div class="container subscription-form">
+        <div class="subscription-form-text">
+            <h2 class="subscription-title" id="subscription">Newsletter</h2>
             <p class="subscription-text">
                 Every week we will send you new designs and information about sales.
             </p>
-            <form class="subscription-form">
+            <form class="subscription-form-input">
                 <div class="subscription-field">
-                    <label for="user-name" class="input-label">
-                        <input type="text" name="user-name" class="subscription-input" id="user-name" placeholder="Name"
-                            maxlength="16" minlength="2" required />
-                        <svg class="input-error-icon" width="24" height="24">
-                            <use href="./img/icons.svg#icon-baseline-error-outline"></use>
-                        </svg>
-                    </label>
+                    <input required type="text" name="client-name" class="subscription-input" placeholder="Name"
+                        pattern="[A-Za-z ]{2,16}" />
+                    <svg class="error-icon" width="24" height="24">
+                        <use href="./img/icons.svg#icon-circle-exclamation"></use>
+                    </svg>
                 </div>
                 <div class="subscription-field">
-                    <label for="user-mail" class="input-label">
-                        <input type="email" name="user-mail" class="subscription-input" id="user-mail"
-                            placeholder="E-mail" required />
-                        <svg class="input-error-icon" width="24" height="24">
-                            <use href="./img/icons.svg#icon-baseline-error-outline"></use>
-                        </svg>
+                    <input required type="email" name="client-email" class="subscription-input" placeholder="E-mail"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" />
+                    <svg class="error-icon" width="24" height="24">
+                        <use href="./img/icons.svg#icon-circle-exclamation"></use>
+                    </svg>
+                </div>
+                <div class="subscription-field-checkbox">
+                    <input type="checkbox" name="client-agreement" value="true" class="agreement-check visually-hidden"
+                        id="client-agreement" />
+                    <label for="client-agreement" class="check-text">
+                        <span class="check-terms">
+                            <svg class="check-icon" width="13" height="13">
+                                <use href="./img/icons.svg#icon-checkpoint"></use>
+                            </svg>
+                        </span>
+                        Agree to subscribe to the newsletter
                     </label>
                 </div>
-                <div class="subscription-checkbox">
-                    <input type="checkbox" name="user-agree" id="user-agree" class="subscription-check visually-hidden"
-                        value="true" />
-                    <label for="user-agree" class="check-label"><span class="checkbox-span"><svg class="checkbox-icon"
-                                width="13" height="13">
-                                <use href="./img/icons.svg#icon-check"></use>
-                            </svg></span>Agree to subscribe to the newsletter</label>
-                </div>
-
-                <button type="submit" class="subscription-send-button">Send</button>
+                <button type="submit" class="send-btn shadow-drop-2-center">
+                    <span class="btn-text">Send</span>
+                </button>
             </form>
         </div>
-        <div class="subscription-image-container">
-            <picture class="subscription-image">
-                <source srcset="
-            ./img/subscription.img/product14-desktop-1x.jpg 1x,
-            ./img/subscription.img/product14-desktop-2x.jpg 2x
-          " media="(min-width: 1440px)" />
-                <source srcset="
-            ./img/subscription.img/product11-tab-1x.jpg 1x,
-            ./img/subscription.img/product11-tab-2x.jpg 2x
-          " media="(min-width: 768px)" />
-                <source srcset="
-            ./img/subscription.img/product7-mob-1x.jpg 1x,
-            ./img/subscription.img/product7-mob-2x.jpg 2x
-          " media="(min-width: 320px)" />
-                <img class="subscription-img" src="./img/subscription.img/product14-desktop-1x.jpg"
-                    alt="Grey Furniture Image" width="343" />
-            </picture>
-        </div>
+        <picture>
+            <source media="(min-width: 320px) and (max-width: 767px)"
+                srcset="./img/product7-mob-1x.jpg 1x, ./img/product7-mob-2x.jpg 2x" type="image/jpg" />
+            <source media="(min-width: 768px) and (max-width: 1439px)"
+                srcset="./img/product11-tab-1x.jpg 1x, ./img/product11-tab-2x.jpg 2x" type="image/jpg" />
+            <source media="(min-width: 1440px)" srcset="
+          ./img/product14-desktop-1x.jpg    1x,
+          ./img/product14-desktop-2x.jpg 2x
+        " type="image/jpg" />
+            <img src="./img/product14-desktop-1x.jpg" alt="Tea table and sofa" width="704" height="396" />
+        </picture>
     </div>
 </section>

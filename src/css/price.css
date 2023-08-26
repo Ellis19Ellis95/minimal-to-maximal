@@ -1,101 +1,73 @@
-.plan-container {
-    display: flex;
-    padding-top: 0;
-}
-
-.plan-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-}
-
-.plan-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1.5;
-    letter-spacing: 0em;
-    color: var(--primary-text-color);
-    text-align: left;
+.section-price-item {
     position: relative;
-}
-
-.plan-item {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    border-top: 1px solid #0A224A;
-    min-width: 288px;
+    align-items: center;
+    border-top: solid 1px var(--blue-font);
     padding: 30px 0;
+    overflow: hidden;
 }
 
-.plan-item:last-child {
-    border-bottom: 1px solid #0A224A;
+.section-price-item:last-child {
+    border-bottom: solid 1px var(--blue-font);
 }
 
-.plan-options {
-    font-family: 'Roboto', sans-serif;
+.section-price-title {
+    font-size: 28px;
+    text-transform: uppercase;
+    transition: padding 250ms 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-price-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: var(--blue-font);
+    transform: translateX(-100%);
+    transition: transform 250ms 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-price-title:hover {
+    padding-left: 80px;
+}
+
+.section-price-title:hover::before {
+    transform: translateX(0);
+}
+
+.section-price-text {
+    text-align: right;
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0em;
-    text-align: right;
-    color: var(--primary-text-color);
 }
 
-
-
 @media screen and (min-width: 768px) {
-    .plan-text {
+    .section-price {
+        padding-bottom: 100px;
+    }
+
+    .section-price-title {
         font-size: 32px;
-        line-height: 1.4;
-    }
-
-    .plan-list {
-        max-width: 708px;
-    }
-
-    .plan-item {
-        min-width: 704px;
-    }
-
-    .plan-options {
-        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .plan-item {
-        min-width: 1096px;
+    .section-price {
+        padding-top: 0;
+        padding-bottom: 100px;
     }
 
-
-
-    .plan-text::before {
-        content: '';
-        background-color: #0A224A;
-        position: absolute;
-        left: 0;
-        right: 20px;
-        bottom: 50%;
-
-
-        width: 0;
-        height: 0;
-        flex-shrink: 0;
+    .price-container {
+        width: 1096px;
     }
+}
 
-    .plan-text:hover::before {
-        width: 50px;
-        height: 3px;
-
+@media screen and (max-width: 767px) {
+    .section-price {
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
-
-    .plan-text:hover {
-        padding-left: 80px;
-
-    }
-
 }
