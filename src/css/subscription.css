@@ -70,6 +70,7 @@
 
 .check-label {
     color: var(--checkbox-text-color);
+    display: block;
 }
 
 .subscription-check:checked+.check-label span {
@@ -83,7 +84,7 @@
 }
 
 .check-label span {
-    display: inline-flex;
+    display:  inline-flex;
     align-items: center;
     justify-content: center;
     width: 25px;
