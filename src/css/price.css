@@ -1,55 +1,74 @@
-.price {
-    padding: 64px 0;
+.plan-container {
+    display: flex;
+    padding-top: 0;
 }
 
-.price-item {
-    padding: 30px 0;
-    border-top: 1px solid var(--primary-color);
+.plan-list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
     align-items: center;
 }
 
-.price-item:last-child {
-    border-bottom: 1px solid var(--primary-color);
-}
-
-.price-item:hover .price-item-text,
-.price-item:hover .price-spn {
-    color: var(--hover-color);
-}
-
-.price-item-text {
+.plan-text {
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
-    line-height: 1.5;
+    font-weight: 400;
     text-transform: uppercase;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.5;
+    letter-spacing: 0em;
+    color: var(--primary-text-color);
+    text-align: left;
+    position: relative;
 }
 
-.price-spn {
+.plan-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid #0A224A;
+    min-width: 288px;
+    padding: 30px 0;
+}
+
+.plan-item:last-child {
+    border-bottom: 1px solid #0A224A;
+}
+
+.plan-options {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0em;
+    text-align: right;
+    color: var(--primary-text-color);
 }
 
-@media screen and (min-width: 768px) {
-    .price {
-        padding: 100px 0;
-    }
 
-    .price-item-text {
-        font-size: 32px;
-        line-height: 1.4;
-    }
 
-    .price-spn {
-        font-size: 18px;
-    }
+
+.plan-text::before {
+    content: '';
+    background-color: #0A224A;
+    position: absolute;
+    left: 0;
+    right: 20px;
+    bottom: 50%;
+
+
+    width: 0;
+    height: 0;
+    flex-shrink: 0;
 }
 
-@media screen and (min-width: 1440px) {
-    .price>.container {
-        max-width: 1216px;
-    }
+.plan-text:hover::before {
+    width: 50px;
+    height: 3px;
+
+}
+
+.plan-text:hover {
+    padding-left: 80px;
+
 }
