@@ -1,85 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/minimal-to-maximal/favicon.svg" />
+    <!--<meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/minimal-to-maximal/assets/index-c45ada6b.js"></script>
-    <link rel="stylesheet" href="/minimal-to-maximal/assets/index-10c40100.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+  
+    <title>Minimal</title>
+  
+<meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+  />
+ 
+  
+    <link rel="stylesheet" href="/minimal-to-maximal/assets/index-7382289b.css">
   </head>
+  
   <body>
-    <header class="header">
+    <header>
+      <header class="header">
+
   <nav class="nav">
     <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+      
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/minimal-to-maximal/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+  <link rel="stylesheet" href="./src/css/header.css"/>
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+    <nav class="nav">
+      <a href="" class="header-logo">
+        <svg class="logo-minimal" width="127" height="16">
+          <use href="./src/img/icons.svg#icon-logo"></use>
+        </svg>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+        <ul class="nav-list">
+          <li class="nav-item"> <a href="#" class="nav-link">About us</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Our products</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Prices</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Bestsellers</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Reviews</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Contacts</a></li>
+        </ul>
+
+    </nav>
+    <button type="button" class="open-menu-btn" data-menu-open>
+      <svg class="button-hamburger" width="32" height="32">
+        <use href="./src/img/icons.svg#icon-align-justify"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mob-menu is-hidden" data-menu>
+    <button type="button" class="close-menu-btn" data-menu-close>
+      <svg class="close-menu-icon" width="8" height="8">
+        <use href="./src/img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <ul class="mob-menu-nav-list">
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">About us</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Our products</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Prices</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Bestsellers</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Reviews</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Contacts</a></li>
+
+    </ul>
+  </div>
+</header>
+<script src="./src/js/js menu.js"></script>
+<script src="./src/js/modal.js"></script>
+    </header>
+    <main>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section class="hero-headbox">
+            <div class="hero-headbox-images">
+                <h1 class="hero-title">Modern and minimalist furniture for you</h1>
+                <div src="images/hero-furniture1-desk.jpg" alt="" class="furniture1-img"></div>
+                <div src="images/hero-furtniture2-desk.jpg" alt="" class="furniture2-img"></div>
+            </div>
+            <div class="hero-headbox-block">
+                <div src="images/hero-furniture3-desk.jpg" alt="" class="furniture3-img"></div>
+                <p class="hero-btn-text">
+                    Add a touch of elegance to your space with handcrafted furniture
+                    pieces
+                </p>
+                <button type="submit" class="hero-subscribe-btn">Subscribe</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+    <section class="about">
+			<div class="container-desktop">
+				<div class="container">
+				<div class="background"><div class="about-information">
+                    <h2 class="about-title">About us</h2>
+				        <h3 class="about-subtitle">Our сraftsmanship: сreating unique handmade furniture</h3>
+				        <p class="about-desc">
+					    Discover the inspiration behind our modern and minimalist
+					    designs, and see how we bring them to life through our
+					    skilled craftsmanship.
+				        </p>
+				<ul class="about-list">
+					<li class="about-item">
+						<p class="about-statistic">5+</p>
+						<p class="about-item-text">
+							Years of experience creating handcrafted furniture
+						</p>
+					</li>
+					<li class="about-item">
+						<p class="about-statistic">100%</p>
+						<p class="about-item-text">
+							Sustainably sourced materials used in all of our
+							furniture
+						</p>
+					</li>
+					<li class="about-item">
+						<p class="about-statistic">500+</p>
+						<p class="about-item-text">
+							Unique furniture designs crafted by our skilled
+							artisans
+						</p>
+					</li>
+				</ul>
+            </div></div>
+        </div>
+                <div class="img-container">
+				    <picture>
+					    <source
+						media="(min-width: 1440px)"
+						srcset="
+							./img/about us/about_desk.jpg 1x,
+							./img/about us/about_desk@2x.jpg 2x
+						"
+					    />
+					    <source
+						media="(min-width: 768px)"
+						srcset="
+							./img/about us/about_tab.jpg 1x,
+							./img/about us/about_tab@2x.jpg 2x
+						"
+					    />
+					    <source
+						media="(min-width: 320px)"
+						srcset="
+							./img/about us/about_mob.jpg 1x,
+							./img/about us/about_mob@2x.jpg 2x
+						"
+					    />
+					    <img src="/minimal-to-maximal/assets/about_tab-d66ab4aa.jpg" alt="Sofa" />
+				    </picture>
+			    </div>
+			</div>
+		</section>
+    <section class="plan-container section" id="price">
+    <div class="container">
+        <h2 class="sub-title-plan visually-hidden">Product price</h2>
+        <ul class="plan-list">
+            <li class="plan-item">
+
+                <h2 class="plan-text">Chairs</h2>
+                <p class="plan-options zoom-element">from 200
+                    <span>&#36;</span>
+                </p>
+
+
+            </li>
+            <li class="plan-item">
+                <h2 class="plan-text">Tables</h2>
+                <p class="plan-options">from 250
+                    <span>&#36;</span>
+                </p>
+            </li>
+            <li class="plan-item">
+                <h2 class="plan-text">Dressers</h2>
+                <p class="plan-options">from 300
+                    <span>&#36;</span>
+                </p>
+            </li>
+            <li class="plan-item">
+                <h2 class="plan-text">Sofas</h2>
+                <p class="plan-options">from 500
+                    <span>&#36;</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+  />
+  <link rel="stylesheet" href="./styles-products.css" />
+  </head>
+
+  <body>
+    <header> </header>
+    <main>
+      <section class="products">
+        <div class="container">
+        <h2 class="section-name">Our products</h2>
+        <ul class="list list-products">
+          <li class="list-goods"> <div class="goods">
+            <img
+              class="foto-title"
+              srcset="/minimal-to-maximal/assets/product1@1x-83ea867b.jpg 1x, /minimal-to-maximal/assets/product1@2x-50c77e53.jpg 2x"
+              src="./img/product1@1x.jpg "
+              alt="mebel"
+              width="312"
+              height="300"
+              loading="lazy"
+            />
+            <p class="text-product">Minimalist storage solutions</p>
+          </div>
+          </li>
+          <li class="list-goods tablet">
+            <div class="goods">
+            <img
+              class="foto-title"
+              srcset="/minimal-to-maximal/assets/product2@1x-042b3b57.jpg 1x, /minimal-to-maximal/assets/product2@2x-f34a9a86.jpg 2x"
+              src="./img/product2@1x.jpg "
+              alt="mebel"
+              width="312"
+              height="300"
+              loading="lazy"
+            />
+            <p class="text-product">Handcrafted minimalist seating</p>
+            </div>
+          </li>
+          <li class="list-goods desktop">
+            <div class="goods">
+            <img
+              class="foto-title"
+              srcset="/minimal-to-maximal/assets/product3@1x-9a81eb5d.jpg 1x, /minimal-to-maximal/assets/product3@2x-95c09941.jpg 2x"
+              src="./img/product3@1x.jpg "
+              alt="mebel"
+              width="312"
+              height="300"
+              loading="lazy"
+            />
+            <p class="text-product">Sleek and simple tables</p>
+            </div>
+          </li>
+          <li class="list-goods desktop"><div class="goods">
+            <img
+              class="foto-title"
+              srcset="/minimal-to-maximal/assets/product4@1x-0b624508.jpg 1x, /minimal-to-maximal/assets/product4@2x-d54475ea.jpg 2x"
+              src="./img/product4@1x.jpg "
+              alt="mebel"
+              width="312"
+              height="300"
+              loading="lazy"
+            />
+            <p class="text-product">Minimalist seating for every space</p>
+            </div>
+          </li>
+        </ul></div>
+      </section>
+    </main>
+    <footer> </footer>
+  </body>
+</html>
+
+    <section class="bestsellers">
+  <div class="container">
+    <h1 class="bestsellers-title">Bestsellers</h1>
+    <div class="bestsellers-wrapper">
+      <div class="bestsellers-img-wrapper">
+        <img
+          class="bestsellers-mob-img"
+          srcset="/minimal-to-maximal/assets/mob-img-1@1x-658019bd.png 1x, /minimal-to-maximal/assets/mob-img-1@2x-4be4de82.png 2x"
+          src="/minimal-to-maximal/assets/mob-img-1@1x-658019bd.png"
+          alt="The modern platform bed"
+        />
+        <img
+          class="bestsellers-tabl-img"
+          srcset="/minimal-to-maximal/assets/tabl-img-1@1x-a60bfd82.png 1x, /minimal-to-maximal/assets/tabl-img-1@2x-23f2817d.png 2x"
+          src="/minimal-to-maximal/assets/tabl-img-1@1x-a60bfd82.png"
+          alt="The modern platform bed"
+        />
+        <img
+          class="bestsellers-desk-img"
+          srcset="/minimal-to-maximal/assets/desk-img-1@1x-d64c1fca.png 1x, /minimal-to-maximal/assets/desk-img-1@2x-4a2db303.png 2x"
+          src="/minimal-to-maximal/assets/desk-img-1@1x-d64c1fca.png"
+          alt="The modern platform bed"
+        />
+        <h3 class="bestsellers-list-text">The modern platform bed</h3>
+        <p class="bestsellers-list-price">750$</p>
+      </div>
+      <ul class="bestsellers-list">
+        <li class="bestsellers-item">
+          <img
+            class="bestsellers-list-mobimg"
+            srcset="/minimal-to-maximal/assets/mob-img-2@1x-edd58a6f.png 1x, /minimal-to-maximal/assets/mob-img-2@2x-d931fbcf.png 2x"
+            src="/minimal-to-maximal/assets/mob-img-2@1x-edd58a6f.png"
+            alt="The Cozy Lounge Chair"
+          />
+          <img
+            class="bestsellers-list-tablimg"
+            srcset="/minimal-to-maximal/assets/tabl-img-2@1x-a1ed2d7f.png 1x, /minimal-to-maximal/assets/tabl-img-2@2x-9a222642.png 2x"
+            src="/minimal-to-maximal/assets/tabl-img-2@1x-a1ed2d7f.png"
+            alt="The Cozy Lounge Chair"
+          />
+          <img
+            class="bestsellers-list-deskimg"
+            srcset="/minimal-to-maximal/assets/desk-img-2@1x-658b04f2.png 1x, /minimal-to-maximal/assets/desk-img-2@2x-4b5b5c28.png 2x"
+            src="/minimal-to-maximal/assets/desk-img-2@1x-658b04f2.png"
+            alt="The Cozy Lounge Chair"
+          />
+          <h3 class="bestsellers-list-text">The Cozy Lounge Chair</h3>
+          <p class="bestsellers-list-price">230$</p>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="bestsellers-item">
+          <img
+            class="bestsellers-list-mobimg"
+            srcset="/minimal-to-maximal/assets/mob-img-3@1x-ddcdd5e0.png 1x, /minimal-to-maximal/assets/mob-img-3@2x-d6f8fce7.png 2x"
+            src="/minimal-to-maximal/assets/mob-img-3@1x-ddcdd5e0.png"
+            alt="The industrial accent chair"
+          />
+          <img
+            class="bestsellers-list-tablimg"
+            srcset="/minimal-to-maximal/assets/tabl-img-3@1x-0e25f594.png 1x, /minimal-to-maximal/assets/tabl-img-3@2x-f8cc9cf6.png 2x"
+            src="/minimal-to-maximal/assets/tabl-img-3@1x-0e25f594.png"
+            alt="The industrial accent chair"
+          />
+          <img
+            class="bestsellers-list-deskimg"
+            srcset="/minimal-to-maximal/assets/desk-img-3@1x-382e58ea.png 1x, /minimal-to-maximal/assets/desk-img-3@2x-83bf9b02.png 2x"
+            src="/minimal-to-maximal/assets/desk-img-3@1x-382e58ea.png"
+            alt="The industrial accent chair"
+          />
+          <h3 class="bestsellers-list-text">The industrial accent chair</h3>
+          <p class="bestsellers-list-price">250$</p>
+        </li>
+        <li class="bestsellers-item disappear">
+          <img
+            class="bestsellers-list-tablimg"
+            srcset="/minimal-to-maximal/assets/tabl-img-4@1x-1cca53f8.png 1x, /minimal-to-maximal/assets/tabl-img-4@2x-7ef1bbca.png 2x"
+            src="/minimal-to-maximal/assets/tabl-img-4@1x-1cca53f8.png"
+            alt="The sleek stand"
+          />
+          <img
+            class="bestsellers-list-deskimg"
+            srcset="/minimal-to-maximal/assets/desk-img-4@1x-de5d9d25.png 1x, /minimal-to-maximal/assets/desk-img-4@2x-04e2506c.png 2x"
+            src="/minimal-to-maximal/assets/desk-img-4@1x-de5d9d25.png"
+            alt="The sleek stand"
+          />
+          <h3 class="bestsellers-list-text">The sleek stand</h3>
+          <p class="bestsellers-list-price">300$</p>
+        </li>
+        <li class="bestsellers-item disappear">
+          <img
+            class="bestsellers-list-tablimg"
+            srcset="/minimal-to-maximal/assets/tabl-img-5@1x-1d604ed3.png 1x, /minimal-to-maximal/assets/tabl-img-5@2x-2de6e8c2.png 2x"
+            src="/minimal-to-maximal/assets/tabl-img-5@1x-1d604ed3.png"
+            alt="The minimalist sofa"
+          />
+          <img
+            class="bestsellers-list-deskimg"
+            srcset="/minimal-to-maximal/assets/desk-img-5@1x-f74f729b.png 1x, /minimal-to-maximal/assets/desk-img-5@2x-690067c8.png 2x"
+            src="/minimal-to-maximal/assets/desk-img-5@1x-f74f729b.png"
+            alt="The minimalist sofa"
+          />
+          <h3 class="bestsellers-list-text">The minimalist sofa</h3>
+          <p class="bestsellers-list-price">650$</p>
         </li>
       </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/minimal-to-maximal/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
     </div>
   </div>
 </section>
 
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+  />
+  <link rel="stylesheet" href="./styles-review.css" />
+  </head>
 
-    
+  <body>
+    <header> </header>
+    <main>
+      <section class="section-reviews">
+        <div class="container">
+        <h2 class="section-name">Clients reviews</h2>
+        <ul class="reviews-list list">
+          <li class="list-review">
+            <div class="block-img-p">
+            <img
+              class="reviews"
+              srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADkAOAMBIgACEQEDEQH/xAAxAAADAAMBAQAAAAAAAAAAAAAABgcDBAUIAQEBAQEBAQAAAAAAAAAAAAAAAwQCAQX/2gAMAwEAAhADEAAAAL+o/YELOOk2dee3gPivJtl6nFcqhk/EOtF6FG30fqbffk7jpczriyLA0lN89DVW8GTP2rDPnCVdFtKqNBQZ9QRDkfAvSaNkErNVEmANn//EADMQAAIBAwIDBQYFBQAAAAAAAAECAwQFEQASBiExEyJRYXIQFBUyQVIHIzNxgSA0QmLR/9oACAEBAAE/ANcQcY2+zloVxNUjqmcKnqOqninii4yZ96McJ6JCTFgfxqnSvWoEpr6jD8v1WJGoL/fLcV7K4SVGOkch3jHmTqw8aUN1daWcCCrJwFzlH9J9nGHELWimSnp2xWTjkfrGn3aEnvV2gU5Iyck9SdUVhpyoaRmyR0B1DYqWFt4Qn99V1spnD4G0nVSHo7uYt+3DZUjXBnET3ajaCoOayADJ+9Pu1f6+S5cQXCp6okhjj8Nqd0atK0816XaS5TJYkYyQcageIEDtBnwzo1Cbfm1NIrFgHXPhnXEYZblB+Xnf8uNcM3Y0N7oKgZCPIEf0PyOmrhFCgKgkyFm8zrh2mWaoap27d8ZT9iDnUtluks4d6x2QHKgIuB4akglNIkQlO8vtLeQ0tkucUxMVWUiJBIaNdXujgYdpIwPu0TNu8SdQu8ccI57xzHjnOr5aoaG5VtOcuyzF15YAVjuXVumMNUYhgDYCF/2XUl3mYrAncz1ZuQGpbjUGNIRRuJA+d+8bAPHdp71IFeE/mbf8l5j+dX6vnllEB5IQJGH1JB7o1w7RSXS72ql2nDSqX8Qi95tccWeWWm+KUcAeeBMOo6mMfUea6a9VPxKjNMhd+1G7AJyDyOovd6+nMTorEYOCOhGmo2EQHYxA/fsX/mq6sorPQsp2oMFm0J5bhK9eWI3O+AOoVcY1wBw69DSi61kZWpmTESHqqey9fh5A11S7WnbFISTNTn5H3dSngdVVprKMiQxPDKnQkcmGqriS7QgxfDsnoGz3dVdsv9/l7Cnppqmd2G/Yp2RjzboNcG/hslnCz3V0lnDbkgXnGn9EnyP6Tqf+6Hq1F+lH6R7f/8QAHhEAAgICAwEBAAAAAAAAAAAAAQIAEQMhEBITMXH/2gAIAQIBAT8AyZOuh9lMTZJgd1I3YgNiM1uYNQxGpY+N/U0IP3jGtLsQiwRPPr8MCADj/8QAIREBAAICAQMFAAAAAAAAAAAAAQACAxEiEiExBBBBUZH/2gAIAQMBAT8AxY+p2+J0lTWgmTFRH7iamGnEmh8kTq+NS9eTMWWpjO8/JludqkyW5OmCiJKeoUeMvktay+3/2Q== 1x, data:image/jpeg;base64,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 2x"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADkAOAMBIgACEQEDEQH/xAAxAAADAAMBAQAAAAAAAAAAAAAABgcDBAUIAQEBAQEBAQAAAAAAAAAAAAAAAwQCAQX/2gAMAwEAAhADEAAAAL+o/YELOOk2dee3gPivJtl6nFcqhk/EOtF6FG30fqbffk7jpczriyLA0lN89DVW8GTP2rDPnCVdFtKqNBQZ9QRDkfAvSaNkErNVEmANn//EADMQAAIBAwIDBQYFBQAAAAAAAAECAwQFEQASBiExEyJRYXIQFBUyQVIHIzNxgSA0QmLR/9oACAEBAAE/ANcQcY2+zloVxNUjqmcKnqOqninii4yZ96McJ6JCTFgfxqnSvWoEpr6jD8v1WJGoL/fLcV7K4SVGOkch3jHmTqw8aUN1daWcCCrJwFzlH9J9nGHELWimSnp2xWTjkfrGn3aEnvV2gU5Iyck9SdUVhpyoaRmyR0B1DYqWFt4Qn99V1spnD4G0nVSHo7uYt+3DZUjXBnET3ajaCoOayADJ+9Pu1f6+S5cQXCp6okhjj8Nqd0atK0816XaS5TJYkYyQcageIEDtBnwzo1Cbfm1NIrFgHXPhnXEYZblB+Xnf8uNcM3Y0N7oKgZCPIEf0PyOmrhFCgKgkyFm8zrh2mWaoap27d8ZT9iDnUtluks4d6x2QHKgIuB4akglNIkQlO8vtLeQ0tkucUxMVWUiJBIaNdXujgYdpIwPu0TNu8SdQu8ccI57xzHjnOr5aoaG5VtOcuyzF15YAVjuXVumMNUYhgDYCF/2XUl3mYrAncz1ZuQGpbjUGNIRRuJA+d+8bAPHdp71IFeE/mbf8l5j+dX6vnllEB5IQJGH1JB7o1w7RSXS72ql2nDSqX8Qi95tccWeWWm+KUcAeeBMOo6mMfUea6a9VPxKjNMhd+1G7AJyDyOovd6+nMTorEYOCOhGmo2EQHYxA/fsX/mq6sorPQsp2oMFm0J5bhK9eWI3O+AOoVcY1wBw69DSi61kZWpmTESHqqey9fh5A11S7WnbFISTNTn5H3dSngdVVprKMiQxPDKnQkcmGqriS7QgxfDsnoGz3dVdsv9/l7Cnppqmd2G/Yp2RjzboNcG/hslnCz3V0lnDbkgXnGn9EnyP6Tqf+6Hq1F+lH6R7f/8QAHhEAAgICAwEBAAAAAAAAAAAAAQIAEQMhEBITMXH/2gAIAQIBAT8AyZOuh9lMTZJgd1I3YgNiM1uYNQxGpY+N/U0IP3jGtLsQiwRPPr8MCADj/8QAIREBAAICAQMFAAAAAAAAAAAAAQACAxEiEiExBBBBUZH/2gAIAQMBAT8AxY+p2+J0lTWgmTFRH7iamGnEmh8kTq+NS9eTMWWpjO8/JludqkyW5OmCiJKeoUeMvktay+3/2Q=="
+              alt="reviews"
+              width="56"
+              height="56"
+              loading="lazy"
+            /><div class="name-time">
+            <h3 class="name-rewiev">Alexandra Dream</h3>
+            <p class="time-rewiev">1 week ago</p></div></div>
+            <p class="text-review"
+              >I was blown away by the quality and craftsmanship of the furniture I received from
+              this company. Each piece was unique and beautifully designed, and you can tell that a
+              lot of thought and care goes into every detail.
+            </p>
+          </li>
+          <li class="list-review tablet">
+            <div class="block-img-p">
+            <img
+              class="reviews"
+              srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADkAOAMBIgACEQEDEQH/xAAyAAACAwADAQAAAAAAAAAAAAAABgMFBwIECAEBAAMBAQAAAAAAAAAAAAAAAAIDBAEA/9oADAMBAAIQAxAAAADf+l8zzcoVmXR56c39BeeGlqttK0IF2j7kpYkTcqSS5edFON82xFYMTdRNif257wtM/mrorbvX7UPA2hrbI5DNTc63erW1Ef7AIAAh/8QAMhAAAgEDAwMCAwUJAAAAAAAAAQIDAAQFBhEhEjFxE0EQIlEHFCMyMxUgQlJhYnKSsf/aAAgBAQABPwCrzKQ2pKKA7j29h5rN60yORee2sLxoljfp/CPS8n1CmrnU/wBxK+o1y3BAJkZXHkGsR9p2bsrsI05urZiABJ+cVic/bX6xhh6crgEA9j8Mpem0jEcZ/Gcf6is/cNb4XIzBiGELbH+p4rSGj7rI2sd3PcFIid0UCpdD4oopkhEpA7uSa1lpywxlstzboEcPWlruW6wVnM7Hr+Yb/wCLECsHlTdQGKX9WIcn6r9av7g3F7PJvx1EDwOKzcZmw2RjHdrd/wDlWlpqE4i0itJ0SJUAGzlCNvG1XqarTH2YN7EfWd14Zlb5f7qzSZoWbRXrsyDcndi3b3BatIvGuEtIF7qhJ8sd6xl0bXI28m/HWFbw3FAknmuGUqRuCKTOzWrCyZeiGNykkg32ULV3rx55razkslRIpf1VYngdiK1Hn3vbVIXRkVvY9zWlskyTrGT8tdW+xWr2E297cREdnO3g8igeKlyMeM1DNNNuIJT0vWVucEJjeJfNJ/KgUVfTTXEnrysT6jMQDWCG0hYVgUN7dWkPfdx1eBya1BjTLGtzCvzxjZgPdahSWZuiNCzH2FZ3E9UkyyAFt6nxPQ4HW230r9jC6RF5B34Iq00hkrNUli2mRlBIHDCtE4Oaztze3UZWWUbIh7qnwW3ij6jHGq9R3Ow25rO4ZrljLHssnuD2NXGnMk0+xhIFYjS5AX1ELH6CrXGJDs0uxb2Udh+43Y+K/jNL+UePj//EABwRAAIBBQEAAAAAAAAAAAAAAAECAAMQESExEv/aAAgBAgEBPwCM2TKbBhfeTrkpc5MWbyWbcpup1CbNTUnMVQvLf//EAB4RAAICAwADAQAAAAAAAAAAAAECABEDECESEyIx/9oACAEDAQE/AIqcHauZF8G0P2UKH1M1WO3tPYqCplRh0waXKyiozFj3X//Z 1x, data:image/jpeg;base64,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 2x"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADkAOAMBIgACEQEDEQH/xAAyAAACAwADAQAAAAAAAAAAAAAABgMFBwIECAEBAAMBAQAAAAAAAAAAAAAAAAIDBAEA/9oADAMBAAIQAxAAAADf+l8zzcoVmXR56c39BeeGlqttK0IF2j7kpYkTcqSS5edFON82xFYMTdRNif257wtM/mrorbvX7UPA2hrbI5DNTc63erW1Ef7AIAAh/8QAMhAAAgEDAwMCAwUJAAAAAAAAAQIDAAQFBhEhEjFxE0EQIlEHFCMyMxUgQlJhYnKSsf/aAAgBAQABPwCrzKQ2pKKA7j29h5rN60yORee2sLxoljfp/CPS8n1CmrnU/wBxK+o1y3BAJkZXHkGsR9p2bsrsI05urZiABJ+cVic/bX6xhh6crgEA9j8Mpem0jEcZ/Gcf6is/cNb4XIzBiGELbH+p4rSGj7rI2sd3PcFIid0UCpdD4oopkhEpA7uSa1lpywxlstzboEcPWlruW6wVnM7Hr+Yb/wCLECsHlTdQGKX9WIcn6r9av7g3F7PJvx1EDwOKzcZmw2RjHdrd/wDlWlpqE4i0itJ0SJUAGzlCNvG1XqarTH2YN7EfWd14Zlb5f7qzSZoWbRXrsyDcndi3b3BatIvGuEtIF7qhJ8sd6xl0bXI28m/HWFbw3FAknmuGUqRuCKTOzWrCyZeiGNykkg32ULV3rx55razkslRIpf1VYngdiK1Hn3vbVIXRkVvY9zWlskyTrGT8tdW+xWr2E297cREdnO3g8igeKlyMeM1DNNNuIJT0vWVucEJjeJfNJ/KgUVfTTXEnrysT6jMQDWCG0hYVgUN7dWkPfdx1eBya1BjTLGtzCvzxjZgPdahSWZuiNCzH2FZ3E9UkyyAFt6nxPQ4HW230r9jC6RF5B34Iq00hkrNUli2mRlBIHDCtE4Oaztze3UZWWUbIh7qnwW3ij6jHGq9R3Ow25rO4ZrljLHssnuD2NXGnMk0+xhIFYjS5AX1ELH6CrXGJDs0uxb2Udh+43Y+K/jNL+UePj//EABwRAAIBBQEAAAAAAAAAAAAAAAECAAMQESExEv/aAAgBAgEBPwCM2TKbBhfeTrkpc5MWbyWbcpup1CbNTUnMVQvLf//EAB4RAAICAwADAQAAAAAAAAAAAAECABEDECESEyIx/9oACAEDAQE/AIqcHauZF8G0P2UKH1M1WO3tPYqCplRh0waXKyiozFj3X//Z"
+              alt="reviews"
+              width="56"
+              height="56"
+              loading="lazy"
+            /><div class="name-time">
+            <h3 class="name-rewiev">James Williams</h3>
+            <p class="time-rewiev">A week ago</p></div></div>
+            <p class="text-review"
+              >The "Minimal" furniture set is a fantastic addition to my home. It boasts a minimalist design, enhancing the feel and look of my living space. The sturdy construction is worth noting too, which speaks volumes about its durability.
+            </p>
+          </li>
+          <li class="list-review desktop">
+            <div class="block-img-p ">
+            <img
+              class="reviews"
+              srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADkAOAMBIgACEQEDEQH/xAAyAAADAAMBAQAAAAAAAAAAAAAABgcBBQgEAwEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/9oADAMBAAIQAxAAAAC/o305n7mz2q9xRXNrBPZGxfaQkBoiOg9nxFmwp0brs3oeKXUWckO+NSPkZdDeIkGr1UVn9Nc9WOj47o4K2UR0VBfjQ5pz0rPE2pdEcsmgAZP/AP/EADUQAAIBAgUBBQYDCQAAAAAAAAECAwQRAAUGEiExBxMiQXIQFTJRYXEUQ5EgIzNEU3Ox0eL/2gAIAQEAAT8AxqntAyzIWalgQVdb5xg2SP1nGZa71TmUnOZSQIfy6f8AdDFLl+pKqBpkratSE48bAk4i1lq3I3RTWyvbrFU3kGNJdoOXZ8Up6hfw1ceAhPgf0H2a81V7goUpaZ7V1SpsfONPnhy0sruxJZmJJPJJOMmgSfM4VcXjQ73+wxl+Z0UoEMcrBwPhZCvGNWihr4JIkffPHyCEJsflfCSPE11YqwIII4IIx2d6ufPqBqare9dTAbj/AFE8mxrDMZM21LmdQTdFmMUfoj8Ix3e0XxpUw+8XjlA8akYpMtio5gaZ7k7nYfIWx7uinp1nklYMvxqGPJGK9E/FVCxrYKTbGh8xlyzUdBOpOxpBHJ6H4ONjF2ZviJJOJiym+3gYoaxaSthnI8ANm+xx3ktTRIaenWRG5BUsp/VcZhVLSUW2pVEI4CKOftyTisD7mfjcWLNbyv5Yyvf3ikGxBBH3xqGgbLs8zGlYWCzsU+qN4lxURmSMqvW+EpZ5XjQJbc1gTwB98RZZmNFAkMU7oQoHHQ2xnVLWLKjz7mcgkFvphnRdzXcOcaNoTX5tQwbOGmBc/JF5OO0PTb5hAuZ0iFp6dLSoOrx4jEZYBmt/rzOKRIybM53bTcHpybEdfMYyLOYpQlFWWDAAQueA46WucVOXQ1ETq8am4tyMZ5pxaCphUuLSEm30GOz3TL5XTNmFQhWadbRIfy0/69mpOz2CseasyzZFO5uYeiNiuyquyd0NXSTxuqkLuB2frYg4mCzd21z4E3cc3b6W6E9Bigl1Lmbw01H3kgC7RN4xtF+GJFgcZTo7uJ0q81qTVzp8CHlFH1/Yn/gS+hv8Y/m1/unEfwJ6R7f/xAAdEQACAwADAQEAAAAAAAAAAAABAgADERAhQRJh/9oACAECAQE/AJdYykBZU/2v7wTLwQwPhEo3TC2GN0dlrlszyVWjpWEA9hAMevMOxalHfH//xAAgEQACAgEEAwEAAAAAAAAAAAABAgADEQQQEiETMVGR/9oACAEDAQE/AJp6VZSW+4l9XjYfDsqzRcWQp1kGawKAAAMj3Fq5KDmVgv0JTT4wWz2ZdUWyyHuO5BCg+hFdkORKtRnkCv4ZZqGboDiNv//Z 1x, data:image/jpeg;base64,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 2x"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADkAOAMBIgACEQEDEQH/xAAyAAADAAMBAQAAAAAAAAAAAAAABgcBBQgEAwEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/9oADAMBAAIQAxAAAAC/o305n7mz2q9xRXNrBPZGxfaQkBoiOg9nxFmwp0brs3oeKXUWckO+NSPkZdDeIkGr1UVn9Nc9WOj47o4K2UR0VBfjQ5pz0rPE2pdEcsmgAZP/AP/EADUQAAIBAgUBBQYDCQAAAAAAAAECAwQRAAUGEiExBxMiQXIQFTJRYXEUQ5EgIzNEU3Ox0eL/2gAIAQEAAT8AxqntAyzIWalgQVdb5xg2SP1nGZa71TmUnOZSQIfy6f8AdDFLl+pKqBpkratSE48bAk4i1lq3I3RTWyvbrFU3kGNJdoOXZ8Up6hfw1ceAhPgf0H2a81V7goUpaZ7V1SpsfONPnhy0sruxJZmJJPJJOMmgSfM4VcXjQ73+wxl+Z0UoEMcrBwPhZCvGNWihr4JIkffPHyCEJsflfCSPE11YqwIII4IIx2d6ufPqBqare9dTAbj/AFE8mxrDMZM21LmdQTdFmMUfoj8Ix3e0XxpUw+8XjlA8akYpMtio5gaZ7k7nYfIWx7uinp1nklYMvxqGPJGK9E/FVCxrYKTbGh8xlyzUdBOpOxpBHJ6H4ONjF2ZviJJOJiym+3gYoaxaSthnI8ANm+xx3ktTRIaenWRG5BUsp/VcZhVLSUW2pVEI4CKOftyTisD7mfjcWLNbyv5Yyvf3ikGxBBH3xqGgbLs8zGlYWCzsU+qN4lxURmSMqvW+EpZ5XjQJbc1gTwB98RZZmNFAkMU7oQoHHQ2xnVLWLKjz7mcgkFvphnRdzXcOcaNoTX5tQwbOGmBc/JF5OO0PTb5hAuZ0iFp6dLSoOrx4jEZYBmt/rzOKRIybM53bTcHpybEdfMYyLOYpQlFWWDAAQueA46WucVOXQ1ETq8am4tyMZ5pxaCphUuLSEm30GOz3TL5XTNmFQhWadbRIfy0/69mpOz2CseasyzZFO5uYeiNiuyquyd0NXSTxuqkLuB2frYg4mCzd21z4E3cc3b6W6E9Bigl1Lmbw01H3kgC7RN4xtF+GJFgcZTo7uJ0q81qTVzp8CHlFH1/Yn/gS+hv8Y/m1/unEfwJ6R7f/xAAdEQACAwADAQEAAAAAAAAAAAABAgADERAhQRJh/9oACAECAQE/AJdYykBZU/2v7wTLwQwPhEo3TC2GN0dlrlszyVWjpWEA9hAMevMOxalHfH//xAAgEQACAgEEAwEAAAAAAAAAAAABAgADEQQQEiETMVGR/9oACAEDAQE/AJp6VZSW+4l9XjYfDsqzRcWQp1kGawKAAAMj3Fq5KDmVgv0JTT4wWz2ZdUWyyHuO5BCg+hFdkORKtRnkCv4ZZqGboDiNv//Z"
+              alt="reviews"
+              width="56"
+              height="56"
+              loading="lazy"
+            /><div class="name-time">
+            <h3 class="name-rewiev">Emily Watson</h3>
+            <p class="time-rewiev">3 week ago</p></div></div>
+            <p class="text-review"
+              >The "Minimal" furniture set has far exceeded my expectations. The sleek design
+              combined with the high-quality materials have not only added an exceptional aesthetic
+              to my space but also offered an uncompromising standard of comfort.</p
+            >
+          </li>
+        </ul>
+       </div>
+      </section>
+    </main>
+    <footer> </footer>
   </body>
 </html>
+
+    <section id="subscription" class="subscription section">
+    <div class="subscription-input-section container">
+        <div class="subscription-main-container">
+            <h2 class="subscription-title section-title">Newsletter</h2>
+            <p class="subscription-text">
+                Every week we will send you new designs and information about sales.
+            </p>
+            <form class="subscription-form">
+                <div class="subscription-field">
+                    <label for="user-name" class="input-label">
+                        <input type="text" name="user-name" class="subscription-input" id="user-name" placeholder="Name"
+                            maxlength="16" minlength="2" required />
+                        <svg class="input-error-icon" width="24" height="24">
+                            <use href="/minimal-to-maximal/assets/icons-ef51dbd2.svg#icon-baseline-error-outline"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="subscription-field">
+                    <label for="user-mail" class="input-label">
+                        <input type="email" name="user-mail" class="subscription-input" id="user-mail"
+                            placeholder="E-mail" required />
+                        <svg class="input-error-icon" width="24" height="24">
+                            <use href="/minimal-to-maximal/assets/icons-ef51dbd2.svg#icon-baseline-error-outline"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="subscription-checkbox">
+                    <input type="checkbox" name="user-agree" id="user-agree" class="subscription-check visually-hidden"
+                        value="true" />
+                    <label for="user-agree" class="check-label"><span class="checkbox-span"><svg class="checkbox-icon"
+                                width="13" height="13">
+                                <use href="/minimal-to-maximal/assets/icons-ef51dbd2.svg#icon-check"></use>
+                            </svg></span>Agree to subscribe to the newsletter</label>
+                </div>
+                <button type="submit" class="subscription-send-button">Send</button>
+            </form>
+        </div>
+        <div class="subscription-image-container">
+            <picture class="subscription-image">
+                <source srcset="/minimal-to-maximal/assets/subscription-b9bdb066.jpg 1x, /minimal-to-maximal/assets/subscription-2x-274e3d21.jpg 2x" media="(min-width: 1440px)" />
+                <source srcset="/minimal-to-maximal/assets/subscription-tab-70433571.jpg 1x, /minimal-to-maximal/assets/subscription-tab-2x-4650539b.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="/minimal-to-maximal/assets/subscription-mob-3d7fc212.jpg 1x, /minimal-to-maximal/assets/subscription-mob-2x-3c4efe68.jpg 2x" media="(min-width: 320px)" />
+                <img class="subscription-img" src="/minimal-to-maximal/assets/subscription-b9bdb066.jpg"
+                    alt="Grey Furniture Image" width="343" />
+            </picture>
+        </div>
+    </div>
+</section>
+
+  
+    </main>
+    <footer>
+      <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+
+  <body>
+    <footer>
+      <div class="footer-div">
+        <div class="footer-logo">
+          <div class="footer-logo-svg">
+            <a href="" target="_blank" class="footer-logo-svg-link">
+              <svg class="footer-logotype" width="100" height="16">
+                <use href="../img/footer.svg#MINIMAL"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-social">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a
+                  href="https://uk-ua.facebook.com"
+                  target="_blank"
+                  class="footer-item-link"
+                >
+                  <svg class="footer-item-svg" width="28" height="28">
+                    <use href="../img/footer.svg#facebook-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="footer-item-link"
+                >
+                  <svg class="footer-item-svg" width="28" height="28">
+                    <use href="../img/footer.svg#instagram-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="https://www.youtube.com" class="footer-item-link">
+                  <svg class="footer-item-svg" width="28" height="28">
+                    <use href="../img/footer.svg#youtube-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <ul class="footer-menu-list">
+            <li class="footer-item-menu">
+              <a href="#about_us" class="footer-menu-link link">About us</a>
+            </li>
+            <li class="footer-item-menu">
+              <a href="#our_products" class="footer-menu-link link"
+                >Our products</a
+              >
+            </li>
+            <li class="footer-item-menu">
+              <a href="#prices" class="footer-menu-link link">Prices</a>
+            </li>
+            <li class="footer-item-menu">
+              <a href="#bestsellers" class="footer-menu-link link"
+                >Bestsellers</a
+              >
+            </li>
+            <li class="footer-item-menu">
+              <a href="#reviews" class="footer-menu-link link">Reviews</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-geo">
+          <ul class="footer-geo-list">
+            <li>
+              <a href="https://www.google.com/maps" class="footer-geo-link link"
+                >Obolonsky Prospect, 14, Kyiv</a
+              >
+            </li>
+            <li>Daily 10:00-21:00</li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a href="tel:+380669384758" class="footer-contacts-link link"
+                >+380669384758</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a href="tel:+380679384758" class="footer-contacts-link link"
+                >+380679384758</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a
+                href="mailto:minimal.furniture@gmail.com"
+                class="footer-contacts-link link hiddan-mail"
+                >minimal.furniture@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="footer-agreement">
+          By using this website, you agree to the
+          <a href="#" class="footer-agreement-link link">Terms of Service</a>
+          and <a href="#" class="footer-agreement-link link">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+    </footer>
+   
+
+    <script src="./src/js/js menu.js"></script>
+    <script src="./src/js/modal.js"></script>
+    <!--<script type="module" src="/main.js"></script>-->
+  
+  </body>
