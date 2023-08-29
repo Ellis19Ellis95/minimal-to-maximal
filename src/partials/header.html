@@ -1,13 +1,43 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <link rel="stylesheet" href="./src/css/header.css"/>
+  <div class="container">
+    <nav class="nav">
+      <a href="" class="header-logo">
+        <svg class="logo-minimal" width="127" height="16">
+          <use href="./src/img/icons.svg#icon-logo"></use>
+        </svg>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
+        <ul class="nav-list">
+          <li class="nav-item"> <a href="#" class="nav-link">About us</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Our products</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Prices</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Bestsellers</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Reviews</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link">Contacts</a></li>
+        </ul>
+
+    </nav>
+    <button type="button" class="open-menu-btn" data-menu-open>
+      <svg class="button-hamburger" width="32" height="32">
+        <use href="./src/img/icons.svg#icon-align-justify"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mob-menu is-hidden" data-menu>
+    <button type="button" class="close-menu-btn" data-menu-close>
+      <svg class="close-menu-icon" width="8" height="8">
+        <use href="./src/img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <ul class="mob-menu-nav-list">
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">About us</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Our products</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Prices</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Bestsellers</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Reviews</a></li>
+      <li class="mob-menu-nav-item"> <a href="#" class="mob-nav-link">Contacts</a></li>
     </ul>
-  </nav>
+  </div>
 </header>
+<script src="./src/js/js menu.js"></script>
+<script src="./src/js/modal.js"></script>
