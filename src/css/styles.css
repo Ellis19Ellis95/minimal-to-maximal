@@ -15,6 +15,11 @@
 @import url('./price.css');
 @import url('./subscription.css');
 
+@import url('./about.css');
+
+@import url('./bestsellers.css');
+
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
