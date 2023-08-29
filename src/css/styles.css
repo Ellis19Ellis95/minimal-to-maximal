@@ -4,9 +4,16 @@
   | default @import url()
   |============================
 */
+/*@import url('./reset.css');*/
 @import url('./reset.css');
+
+@import url('./variable.css');
+
 @import url('');
+
 @import url('./header.css');
+@import url('./price.css');
+@import url('./subscription.css');
 
 @import url('./about.css');
 
